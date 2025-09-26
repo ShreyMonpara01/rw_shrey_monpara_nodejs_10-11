@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Section</title>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #181818;
+  color: #f1f1f1;
+  padding: 40px;
+}
+
+/* Skills Section */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #242424;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card .icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <!-- Remix Icons for logos -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <section class="skills">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+      </div>
+      <h3>Vanilla JavaScript</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
+      </div>
+      <h3>Angular, React & Vue</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+      </div>
+      <h3>Node.js</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+      </div>
+      <h3>Python & Django</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+  </section>
+</body>
+</html>

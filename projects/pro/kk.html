@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Chris Evans</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #1e1e1e;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons i {
+  margin: 5px;
+  font-size: 20px;
+  color: #bbb;
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  padding: 12px 10px;
+  text-decoration: none;
+  color: #ccc;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.menu a.active,
+.menu a:hover {
+  background: #3a3aff;
+  color: #fff;
+}
+
+.badge {
+  background: #3a3aff;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background: #181818;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.intro a {
+  color: #3a3aff;
+}
+
+.btn {
+  background: #3a3aff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #5c5cff;
+}
+
+/* Skills Section */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #242424;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card .icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="https://via.placeholder.com/100" alt="Profile" class="avatar">
+        <h2>Chris Evans</h2>
+        <p>Senior Software Engineer</p>
+        <div class="social-icons">
+          <i class="ri-facebook-circle-line"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-linkedin-box-line"></i>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="#" class="active">About Us</a>
+        <a href="#">Portfolio <span class="badge">16</span></a>
+        <a href="#">Services & Pricing</a>
+        <a href="#">Resume</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="intro">
+        <h1>What I do</h1>
+        <p>
+          I have more than 10 years experience building software for clients all over the world. 
+          Below is a quick overview of my main technical skill sets and technologies I use. 
+          Want to find out more about my experience? 
+          Check out my <a href="#">online resume</a> and <a href="#">project portfolio</a>.
+        </p>
+        <button class="btn">Services & Pricing</button>
+      </section>
+
+      <!-- Skills -->
+       <section class="skills">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+      </div>
+      <h3>Vanilla JavaScript</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
+      </div>
+      <h3>Angular, React & Vue</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+      </div>
+      <h3>Node.js</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+      </div>
+      <h3>Python & Django</h3>
+      <p>List skills and technologies here. Customize as needed. Built on HTML5, Sass, and Bootstrap 5.</p>
+    </div>
+  </section>
+    </main>
+  </div>
+</body>
+</html>
